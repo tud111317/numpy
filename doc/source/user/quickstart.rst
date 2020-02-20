@@ -839,7 +839,7 @@ Simple assignments make no copy of objects or their data.
 
 ::
 
-    >>> a = np.arange(12)
+    >>> a = np.arange(12).reshape(3, 4)
     >>> b = a            # no new object is created
     >>> b is a           # a and b are two names for the same ndarray object
     True
