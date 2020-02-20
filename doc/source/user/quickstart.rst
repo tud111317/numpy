@@ -868,7 +868,7 @@ creates a new array object that looks at the same data.
     >>> c = a.view()
     >>> c is a
     False
-    >>> c.base is a                        # c is a view of the data owned by a
+    >>> c.base is a.base                       # c is a view of the data owned by a
     True
     >>> c.flags.owndata
     False
